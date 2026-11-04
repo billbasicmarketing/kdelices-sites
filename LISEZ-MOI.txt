@@ -1,0 +1,14 @@
+KDELICES IVOIRE - site de commande
+
+Contenu
+- index.html : le site (page d'accueil, panier, livraison, créneaux)
+- functions/api/distance.js : calcul de la distance avec OpenRouteService
+
+Mise en ligne (Cloudflare Pages)
+1. Mettre ces fichiers dans un dépôt GitHub, puis le relier à Cloudflare Pages
+   (aucune commande de build : laisser vide, dossier de sortie : /).
+2. Dans Cloudflare Pages > Settings > Variables and Secrets, ajouter le secret :
+   Nom : ORS_API_KEY    Valeur : votre clé OpenRouteService
+3. Redéployer, puis relier le domaine kdelicesivoire.fr.
+
+Ne jamais écrire la clé dans index.html ni la partager.
